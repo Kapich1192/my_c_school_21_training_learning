@@ -6,7 +6,7 @@
 /*   By: Dmitriy <kapich1192@yandex.ru>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 10:08:05 by Dmitriy           #+#    #+#             */
-/*   Updated: 2022/05/26 10:36:54 by Dmitriy          ###   ########.fr       */
+/*   Updated: 2022/05/26 10:40:28 by Dmitriy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ int	main(void)
 	x += 5;
 	y++;
 	res = x + y;
-	printf("Variable:%d + %d =  %d", x, y, res);
+	printf("Variable: %d + %d =  %d;\n", x, y, res);
 	return (0);
 }
