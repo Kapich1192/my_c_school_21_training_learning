@@ -5,14 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: Dmitriy <kapich1192@yandex.ru>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/26 18:51:39 by Dmitriy           #+#    #+#             */
-/*   Updated: 2022/05/26 18:58:24 by Dmitriy          ###   ########.fr       */
+/*   Created: 2022/05/30 15:22:41 by Dmitriy           #+#    #+#             */
+/*   Updated: 2022/05/30 15:32:06 by Dmitriy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	ft_putchar(char a)
+void	ft_putchar(char c)
 {
-	printf("%c\n", a);
+	write (1, &c, 1);
+}
+
+int	main(void)
+{
+	ft_putchar ('c');
+	return (0);
 }
