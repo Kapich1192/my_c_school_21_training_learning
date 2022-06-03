@@ -6,7 +6,7 @@
 /*   By: Dmitriy <kapich1192@yandex.ru>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 12:18:27 by Dmitriy           #+#    #+#             */
-/*   Updated: 2022/06/03 12:47:04 by Dmitriy          ###   ########.fr       */
+/*   Updated: 2022/06/03 15:48:00 by Dmitriy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,7 @@ int	ft_strcmp(char *s1, char *s2)
 	{
 		if (s1[i] != s2[i])
 		{
-			if (s1[i] > s2[i])
-				return (s1[i]);
-			else
-				return (s2[i] * (-1));
+			return (s1[i] - s2[i]);
 		}
 		i++;
 	}
@@ -53,8 +50,8 @@ int	main(void)
 	char	*s2;
 	int		res;
 
-	s1 = "Helli";
-	s2 = "Hello";
+	s1 = "Hello";
+	s2 = "Helli";
 	res = ft_strcmp(s1, s2);
 	printf("res = %d", res);
 	return (0);
