@@ -6,7 +6,7 @@
 /*   By: Dmitriy <kapich1192@yandex.ru>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 19:13:42 by Dmitriy           #+#    #+#             */
-/*   Updated: 2022/06/04 19:16:58 by Dmitriy          ###   ########.fr       */
+/*   Updated: 2022/06/05 09:17:10 by Dmitriy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,13 @@ void	ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
+}
+
+int	main(void)
+{
+	char	*s;
+
+	s = "Hello World!";
+	ft_putstr(s);
+	return (0);
 }
